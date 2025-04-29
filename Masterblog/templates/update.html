@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>🛠️ Edit Blog Post</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <style>
+        body {
+            font-family: 'Courier New', monospace;
+            background-color: #00ffff;
+            color: #000080;
+            padding: 2em;
+            background-image: url('https://www.transparenttextures.com/patterns/graphy-dark.png');
+        }
+
+        h1 {
+            text-align: center;
+            font-size: 36px;
+            color: yellow;
+            background-color: purple;
+            padding: 10px;
+            border: 3px double #ff00ff;
+            margin-bottom: 1.5em;
+        }
+
+        form {
+            background-color: #ffffcc;
+            border: 5px ridge #ff69b4;
+            padding: 20px;
+            max-width: 700px;
+            margin: auto;
+            box-shadow: 10px 10px 0 #ff00ff;
+        }
+
+        label {
+            font-weight: bold;
+            display: block;
+            margin-top: 1.2em;
+            font-size: 18px;
+            text-transform: uppercase;
+        }
+
+        input, textarea {
+            width: 100%;
+            padding: 0.6em;
+            border: 3px inset #000080;
+            background-color: #fff;
+            color: #000080;
+            font-family: 'Courier New', monospace;
+            margin-top: 0.3em;
+        }
+
+        button {
+            background-color: #ff1493;
+            color: white;
+            font-size: 20px;
+            font-weight: bold;
+            border: 3px outset #000;
+            padding: 10px 20px;
+            margin-top: 1.5em;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: yellow;
+            color: black;
+        }
+
+        .back-link {
+            text-align: center;
+            margin-top: 2em;
+            font-size: 18px;
+            font-weight: bold;
+        }
+
+        .back-link a {
+            color: blue;
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <h1>🛠️ Edit Blog Post</h1>
+
+    <form method="POST" action="{{ url_for('update', post_id=post.id) }}">
+        <label for="author">👾 Author:</label>
+        <input type="text" id="author" name="author" value="{{ post.author }}" required>
+
+        <label for="title">📼 Title:</label>
+        <input type="text" id="title" name="title" value="{{ post.title }}" required>
+
+        <label for="content">📝 Content:</label>
+        <textarea id="content" name="content" rows="6" required>{{ post.content }}</textarea>
+
+        <button type="submit">💾 Save Changes</button>
+    </form>
+
+    <div class="back-link">
+        <a href="{{ url_for('index') }}">⬅️ Cancel and Go Back</a>
+    </div>
+</body>
+</html>

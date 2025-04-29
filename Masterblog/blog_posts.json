@@ -1,0 +1,37 @@
+[
+  {
+    "id": 1,
+    "author": "CoolKid99",
+    "title": "My Dial-Up Journey",
+    "content": "Took 3 minutes to connect to AOL today. Mom picked up the phone and ruined everything. Classic.",
+    "likes": 4
+  },
+  {
+    "id": 2,
+    "author": "GamerXtreme",
+    "title": "Beating Oregon Trail",
+    "content": "Finally made it to Oregon without dying of dysentery. Pioneers would be proud. RIP to 3 oxen.",
+    "likes": 7
+  },
+  {
+    "id": 3,
+    "author": "GeoCityQueen",
+    "title": "My Glitter Cursor Is Online!",
+    "content": "Spent 4 hours updating my homepage. It now has sparkles, a MIDI soundtrack, AND a dancing baby gif.",
+    "likes": 12
+  },
+  {
+    "id": 4,
+    "author": "ICQMeBro",
+    "title": "Uh Oh!",
+    "content": "The ICQ 'uh-oh!' sound is permanently burned into my brain. Please send help.",
+    "likes": 9
+  },
+  {
+    "id": 5,
+    "author": "NapsterHero",
+    "title": "Downloaded 1 Song in 2 Hours",
+    "content": "Got the full version of 'Smells Like Teen Spirit'. Quality: potato. Worth it: absolutely.",
+    "likes": 11
+  }
+]
